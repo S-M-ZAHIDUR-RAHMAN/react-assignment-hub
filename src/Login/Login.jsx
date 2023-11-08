@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import swal from "sweetalert";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
 import { AuthContext } from "../Providers/AuthProvider";
 
@@ -48,9 +48,12 @@ const Login = () => {
     const handleGoogleSignIn =()=>{
         signInWithPopup(auth, provider)
         .then(result => {
+             console.log(result);
             const user = result?.user;
             console.log(user);
+        
             setSuccessLogin(swal("User logged in successfully!"))
+           
             navigate('/')
         })
         .catch(error => {
