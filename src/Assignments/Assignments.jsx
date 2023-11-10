@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Assignments = () => {
     const assignments = useLoaderData();
+    const [otherAssignments, setOtherAssignments] = useState(assignments);
     console.log(assignments);
     // const [filterDifficultyLevel, setFilterDifficultyLevel] = useState('');
     // setFilterDifficultyLevel('')
@@ -22,7 +23,7 @@ const Assignments = () => {
                 
                 <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-2 mb-16">
                     {   
-                        assignments?.map((assignment) => <Assignment key={assignment?._id} assignment={assignment}></Assignment>)
+                       otherAssignments && otherAssignments?.map((assignment) => <Assignment key={assignment?._id} assignment={assignment} otherAssignments={otherAssignments} setOtherAssignments={setOtherAssignments}></Assignment>)
                     }
                 </div>
             </div>
