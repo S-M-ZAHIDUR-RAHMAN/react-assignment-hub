@@ -17,6 +17,7 @@ import CreateAssignments from './CreateAssignments/CreateAssignments.jsx';
 import MyAssignments from './MyAssignments/MyAssignments.jsx';
 import SubmittedAssignments from './SubmittedAssignments/SubmittedAssignments.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+import Update from './Update/Update.jsx';
 
 
 const router = createBrowserRouter([
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/assignments",
-        element: <Assignments></Assignments>
+        element: <Assignments></Assignments>,
+        loader: () => fetch('http://localhost:5000/createAssignment')
       },
       {
         path: "/login",
@@ -53,6 +55,11 @@ const router = createBrowserRouter([
         path: "/submittedAssignments",
         element: <PrivateRoute><SubmittedAssignments></SubmittedAssignments></PrivateRoute>
       },
+      {
+        path: "/update/:title",
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
+        loader: () => fetch('http://localhost:5000/createAssignment')
+      }
 ]}
 ]);
 
