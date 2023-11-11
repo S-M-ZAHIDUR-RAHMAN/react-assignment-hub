@@ -67,7 +67,7 @@ const NavBar = () => {
                             <div className="w-10" style={{ position: "relative" }}>
                                 <span className=""><img className="rounded-full" src={`${user?.photoURL}`} alt="" /></span>
 
-                                <div style={{ position: "absolute", bottom: "-20px", left: "50%", transform: "translateX(-50%)", opacity: "0", transition: "opacity 5.0s ease-in-out" }} onMouseOver={(e) => e.target.style.opacity = "1"} onMouseOut={(e) => e.target.style.opacity = "0"}>
+                                <div style={{ position: "absolute", bottom: "-20px", left: "50%", transform: "translateX(-50%)", opacity: "0", transition: "opacity 5.0s " }} onMouseOver={(e) => e.target.style.opacity = "1"} onMouseOut={(e) => e.target.style.opacity = "0"}>
 
                                     <span className="text-white w-20 md:w-auto flex-wrap font-semibold px-1 rounded-md shadow-2xl bg-black lg:w-auto" style={{}}>{user?.displayName}</span>
                                 </div>

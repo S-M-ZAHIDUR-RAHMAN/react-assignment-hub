@@ -34,11 +34,11 @@ const Assignments = () => {
                             </select>
                         </label>
                     </div>
-                    <input type="submit" value="Search" className="btn btn-block" />
+                    <input type="submit" value="Search" className="btn btn-block mt-5" />
                     </form>
                 </div>
                 
-                <div className="grid mt-10 grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-2 mb-16">
+                <div className="grid mt-10 grid-cols-1 items-center lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-2 mb-16">
                     {   
                        otherAssignments?.map((assignment) =>
                        assignment?.difficultyLevel === filterDifficultyLevel &&

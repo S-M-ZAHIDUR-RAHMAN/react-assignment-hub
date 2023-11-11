@@ -9,9 +9,24 @@ const CreateAssignments = () => {
     const [startDate, setStartDate] = useState(new Date());
     const {user} = useContext(AuthContext);
     const userName = user.displayName;
+    const [formErrors, setFormErrors] = useState({});
+
 
     const handleCreateAssignment = e => {
         e.preventDefault();
+
+        //Validation create Assignment
+        const errors = {};
+        if(!e.target.title.value.trim()){
+            errors.title = "Title is required";
+        }
+        if(Object.keys(errors).length>0){
+            setFormErrors(errors);
+            return;
+        }
+        setFormErrors({});
+
+
         const form = e.target;
         const title = form.title.value;
         const marks = form.marks.value;
@@ -115,6 +130,7 @@ const CreateAssignments = () => {
                 </div>
                 <input type="submit" value="Create Assignment" className="btn btn-block" />
             </form>
+            {formErrors?.title && <span className="text-red-600 font-bold text-xl mt-4">{formErrors?.title}</span>}
 
         </div>
     );
