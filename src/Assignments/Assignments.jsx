@@ -17,9 +17,9 @@ const Assignments = () => {
    
     return (
         <div className="flex flex-col items-center">
-                <div className="flex flex-row justify-center items-center px-5">
-                    <h2 className="text-4xl font-bold my-8 lg:my-10">All Assignments</h2>
-                </div>
+        <div className="flex flex-row justify-center items-center px-5">
+            <h2 className="text-4xl font-bold my-8 lg:my-10">All Assignments</h2>
+        </div>
                 <div>
                     <form onSubmit={handleAssignmentFilter}>
                     <div className="form-control md:w-full">
