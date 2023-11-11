@@ -63,7 +63,7 @@ const Marking = () => {
             })
     }
     return (
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center my-10">
             <div className="card w-72 h-120 shadow-lg hover:opacity-80 glass py-3 pl-2">
                 <div className="flex flex-col justify-center">
                     <h2 className="card-title text-2xl font-bold">{mark?.title}</h2>
@@ -87,9 +87,6 @@ const Marking = () => {
                             <input className="btn accent bg-yellow-400" type="submit" value="Submit" />
                         </div>
                     </form>
-                </div>
-                <div>
-                    <Link to={"/submittedAssignments"}><button>Go to Submitted Assignments</button></Link>
                 </div>
             </div>
         </div>
