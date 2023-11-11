@@ -2,9 +2,11 @@
 
 import { Link } from "react-router-dom";
 
-const SubmittedAssignment = ({pendingAssignment, pendingAssignments, setPendingAssignments}) => {
+const SubmittedAssignment = ({pendingAssignment, setPendingAssignments}) => {
     const { title, marks, displayName, _id } = pendingAssignment;
     console.log(pendingAssignment);
+
+   
     return (
         <div>
             <div className="card w-72 shadow-lg hover:opacity-80 glass">
