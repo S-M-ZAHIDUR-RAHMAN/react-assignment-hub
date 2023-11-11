@@ -68,7 +68,7 @@ const Marking = () => {
                 <div className="flex flex-col justify-center">
                     <h2 className="card-title text-2xl font-bold">{mark?.title}</h2>
                     <p>PDF Link:</p>
-                    <input className="border mr-2" type="text" defaultValue={mark?.pdf} />
+                    <input className="border mr-2" type="text" defaultValue={mark?.pdf} readOnly />
                     <p>Note: {mark?.note}</p>
                 </div>
                 <div>
