@@ -15,7 +15,7 @@ const MyAssignments = () => {
                     <h2 className="text-4xl font-bold my-8 lg:my-10">My Assignments</h2>
                 </div>
                 
-                <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-2 mb-16">
+                <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 md:items-center gap-2 mb-16">
                     {   
                        assignments?.map((assignment) =>
                        assignment?.userName === displayName && 
