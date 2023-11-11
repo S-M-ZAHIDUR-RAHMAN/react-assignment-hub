@@ -61,8 +61,8 @@ const NavBar = () => {
                 <div className="navbar-end">
                     {
                         user ? <div className="flex flex-col items-center lg:flex-row lg:items-center lg:gap-2 md:flex-row md:gap-2">
-                            <div style={{position:"relative"}}>
-                            <span className="w-10"><img className="rounded-full" src={`${user?.photoURL}`} alt="" /></span>
+                            <div className="w-10" style={{position:"relative"}}>
+                            <span className=""><img className="rounded-full" src={`${user?.photoURL}`} alt="" /></span>
 
                             <div style={{position:"absolute", bottom:"-20px", left:"50%", transform:"translateX(-50%)", opacity:"0", transition:"opacity 5.0s ease-in-out"}} onMouseOver={(e) => e.target.style.opacity ="1"} onMouseOut={(e) => e.target.style.opacity ="0"}>
 

@@ -6,7 +6,7 @@ const Banner = () => {
             <div className="cover"></div>
             <div className="p-0 text-center text-neutral-content">
             <div className="w-[90vw] text-left text-white">
-                    <div className="normal-case text-white py-4 px-4 text-5xl font-extrabold bg-blue-700"><span className="text-yellow-300">Assignment</span>Hub</div>
+                    <div className="normal-case text-white py-4 px-4 text-3xl font-extrabold bg-blue-700"><span className="text-yellow-300">Assignment</span>Hub</div>
                     <p className="mb-5 p-4 hero-overlay text-4xl">STUDYING IN A GROUP IS GREAT<br /> ARE YOU INTERESTED? <br /> JOIN US NOW !! <span className="font-bold underline"></span></p>
                 </div>
                 

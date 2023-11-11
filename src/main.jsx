@@ -21,6 +21,7 @@ import Update from './Update/Update.jsx';
 import Details from './Details/Details.jsx';
 import Submission from './Submission/Submission.jsx';
 import Marking from './SubmittedAssignments/Marking.jsx';
+import Feature from './Home/Feature.jsx';
 
 
 const router = createBrowserRouter([
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('http://localhost:5000/feature')
       },
       {
         path: "/assignments",
@@ -79,6 +81,10 @@ const router = createBrowserRouter([
         path: "/myAssignments",
         element: <PrivateRoute><MyAssignments></MyAssignments></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/createSubmission')
+      },
+      {
+        path: "/feature",
+        element: <Feature></Feature>,
       },
 ]}
 ]);
