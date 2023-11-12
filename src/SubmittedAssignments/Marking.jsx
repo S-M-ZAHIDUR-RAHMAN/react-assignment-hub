@@ -31,7 +31,7 @@ const Marking = () => {
         console.log(newMark);
 
         //add Assignment to Submitted Assignment in DB [PATCH]
-        fetch(`http://localhost:5000/createSubmission/${mark._id}`, {
+        fetch(`https://assignment-hub-server.vercel.app/createSubmission/${mark._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -47,7 +47,7 @@ const Marking = () => {
             })
 
             // add Assignment to Submitted Assignment in DB [PUT]
-        fetch(`http://localhost:5000/createSubmission/${mark._id}`, {
+        fetch(`https://assignment-hub-server.vercel.app/createSubmission/${mark._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

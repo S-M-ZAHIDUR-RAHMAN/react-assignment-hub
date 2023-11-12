@@ -43,7 +43,7 @@ const Update = () => {
         console.log(updatedAssignment);
 
         //update assignment data in the server
-        fetch(`http://localhost:5000/createAssignment/${update._id}`, {
+        fetch(`https://assignment-hub-server.vercel.app/createAssignment/${update._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

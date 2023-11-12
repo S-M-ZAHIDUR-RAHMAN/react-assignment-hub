@@ -39,7 +39,7 @@ const CreateAssignments = () => {
         console.log(newAssignment);
 
         //send data to the server
-        fetch('http://localhost:5000/createAssignment', {
+        fetch('https://assignment-hub-server.vercel.app/createAssignment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

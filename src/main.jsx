@@ -33,12 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/feature')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/feature')
       },
       {
         path: "/assignments",
         element: <Assignments></Assignments>,
-        loader: () => fetch('http://localhost:5000/createAssignment')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createAssignment')
       },
       {
         path: "/login",
@@ -55,32 +55,32 @@ const router = createBrowserRouter([
       {
         path: "/submittedAssignments",
         element: <PrivateRoute><SubmittedAssignments></SubmittedAssignments></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createSubmission')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createSubmission')
       },
       {
         path: "/update/:title",
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createAssignment')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createAssignment')
       },
       {
         path: "/details/:title",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createAssignment')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createAssignment')
       },
       {
         path: "/submission/:title",
         element: <PrivateRoute><Submission></Submission></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createAssignment')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createAssignment')
       },
       {
         path: "/marking/:title",
         element: <PrivateRoute><Marking></Marking></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createSubmission')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createSubmission')
       },
       {
         path: "/myAssignments",
         element: <PrivateRoute><MyAssignments></MyAssignments></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/createSubmission')
+        loader: () => fetch('https://assignment-hub-server.vercel.app/createSubmission')
       },
       {
         path: "/feature",

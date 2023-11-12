@@ -28,7 +28,7 @@ const Assignment = ({ assignment, otherAssignments, setOtherAssignments }) => {
                 .then((willDelete) => {
                     if (willDelete) {
                         console.log('delete confirmed');
-                        fetch(`http://localhost:5000/createAssignment/${id}`, {
+                        fetch(`https://assignment-hub-server.vercel.app/createAssignment/${id}`, {
                             method: 'DELETE'
                         })
                             .then(res => res.json())

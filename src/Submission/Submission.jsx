@@ -29,7 +29,7 @@ const Submission = () => {
         
 
         //add Assignment to Submitted Assignment in DB
-        fetch('http://localhost:5000/createSubmission', {
+        fetch('https://assignment-hub-server.vercel.app/createSubmission', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
