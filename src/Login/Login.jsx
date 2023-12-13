@@ -6,6 +6,7 @@ import swal from "sweetalert";
 import { GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
 import { AuthContext } from "../Providers/AuthProvider";
+import { FaGoogle } from "react-icons/fa";
 
 
 
@@ -74,16 +75,16 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" name="email" placeholder="email" className="input input-bordered text-black" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" name="password" placeholder="password" className="input input-bordered text-black" required />
                     </div>
                     <div className="form-control mt-6">
-                        <input className="btn accent bg-yellow-400" type="submit" value="Login" />
+                        <input className="btn accent bg-slate-200" type="submit" value="Login" />
                     </div>
                 </form>
                 <div className="text-center font-bold text-red-700">
@@ -98,7 +99,7 @@ const Login = () => {
             </div>
                 <p className="text-center pb-2">Yet to open an Account ? Please go to <span className="text-blue-700 underline"><Link to="/register">Register</Link></span></p>
                 <div className="flex justify-center pb-2">
-                    <button className="btn accent bg-yellow-400" onClick={handleGoogleSignIn}>Google Sign in</button>
+                    <button className="btn accent bg-yellow-400" onClick={handleGoogleSignIn}><FaGoogle></FaGoogle> Google Sign in</button>
                 </div>
             </div>
             

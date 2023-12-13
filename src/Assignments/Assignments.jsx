@@ -17,17 +17,17 @@ const Assignments = () => {
    
     return (
         <div className="flex flex-col items-center">
-        <div className="flex flex-row justify-center items-center px-5">
-            <h2 className="text-4xl font-bold my-8 lg:my-10">All Assignments</h2>
+        <div className="flex flex-row justify-center mb-5 text-4xl text-white font-bold hero-overlay mt-5 py-4">
+            <h2>All Assignments</h2>
         </div>
                 <div>
                     <form onSubmit={handleAssignmentFilter}>
                     <div className="form-control md:w-full">
                         <label className="label">
-                            <span className="label-text">Difficulty Level</span>
+                            <span className="label-text text-white">Difficulty Level</span>
                         </label>
                         <label className="select">
-                            <select name="difficultyLevel" className="select select-bordered w-full">
+                            <select name="difficultyLevel" className="select select-bordered w-full text-black">
                                 <option value="easy">Easy</option>
                                 <option value="medium">Medium</option>
                                 <option value="hard">Hard</option>

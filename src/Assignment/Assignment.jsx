@@ -63,9 +63,9 @@ const Assignment = ({ assignment, otherAssignments, setOtherAssignments }) => {
                     <p>Difficulty Level: {difficultyLevel}</p>
                 </div>
                 <div className="flex flex-row justify-start gap-1 ml-8 mb-4">
-                    <Link to={`/details/${title}`}><button className="btn btn-accent">View</button></Link>
-                    <Link to={`/update/${title}`}><button className="btn btn-accent">Update</button></Link>
-                    <button onClick={() => handleDelete(_id)} className="btn btn-accent">Delete</button>
+                    <Link to={`/details/${title}`}><button className="btn accent bg-slate-200">View</button></Link>
+                    <Link to={`/update/${title}`}><button className="btn accent bg-slate-200">Update</button></Link>
+                    <button onClick={() => handleDelete(_id)} className="btn accent bg-slate-200">Delete</button>
                 </div>
 
             </div>

@@ -64,9 +64,9 @@ const Marking = () => {
     }
     return (
         <div className="flex flex-row justify-center my-10">
-            <div className="card w-72 h-120 shadow-lg hover:opacity-80 glass py-3 pl-2">
-                <div className="flex flex-col justify-center">
-                    <h2 className="card-title text-2xl font-bold">{mark?.title}</h2>
+            <div className="card w-72 h-120 shadow-lg glass py-3 pl-2">
+                <div className="flex flex-col justify-center px-4">
+                    <h2 className="card-title text-2xl font-bold text-center">{mark?.title}</h2>
                     <p>PDF Link:</p>
                     <input className="border mr-2" type="text" defaultValue={mark?.pdf} readOnly />
                     <p>Note: {mark?.note}</p>
@@ -75,16 +75,16 @@ const Marking = () => {
                     <form onSubmit={handleMarkAssignment} className="card-body">
                         <div className="form-control ">
                             <label className="label">
-                                <span className="label-text"> Input Marks</span>
+                                <span className="label-text text-white"> Input Marks</span>
                             </label>
-                            <input type="text" name="marking" placeholder="Give mark" className="input input-bordered " required />
+                            <input type="text" name="marking" placeholder="Give mark" className="input input-bordered text-black" required />
                             <label className="label">
-                                <span className="label-text">Input Feedback</span>
+                                <span className="label-text text-white">Input Feedback</span>
                             </label>
-                            <input type="text" name="feedback" placeholder="Feedback" className="input input-bordered " required />
+                            <input type="text" name="feedback" placeholder="Feedback" className="input input-bordered text-black" required />
                         </div>
                         <div className="form-control mt-0">
-                            <input className="btn accent bg-yellow-400" type="submit" value="Submit" />
+                            <input className="btn accent bg-slate-200" type="submit" value="Submit" />
                         </div>
                     </form>
                 </div>

@@ -5,12 +5,12 @@ const Footer = () => {
         <footer className="footer mt-10 footer-center p-10 bg-black text-white">
   <aside>
     
-    <div className="normal-case text-white rounded-full py-1 px-4 text-xl font-extrabold bg-black"><span className="text-yellow-300">Sports</span>shop</div>
-    <div className="flex flex-col justify-around gap-2 rounded-lg border border-red-500 p-5 lg:rounded-full bg-slate-700 lg:flex lg:flex-row lg:justify-around lg:gap-6">
-        <Link to="/"><button className="btn accent bg-yellow-400">Home</button></Link>
-        <Link to="/createAssignments"><button className="btn accent bg-yellow-400">Create Assignments</button></Link>
-        <Link to="/myAssignments"><button className="btn  bg-yellow-400">My Assignments</button></Link>
-        <Link to="/submittedAssignments"><button className="btn  bg-yellow-400">Submitted assignments</button></Link>
+    <div className="normal-case text-white rounded-full py-1 px-4 text-xl font-extrabold bg-black">Assignment-Hub</div>
+    <div className="flex flex-col justify-around gap-2 p-5 lg:rounded-full border-y-4 lg:justify-around lg:gap-6">
+        <Link to="/"><button className="btn accent rounded-full bg-slate-200">Home</button></Link>
+        <Link to="/createAssignments"><button className="btn accent rounded-full bg-slate-200">Create Assignments</button></Link>
+        <Link to="/myAssignments"><button className="btn accent rounded-full bg-slate-200">My Assignments</button></Link>
+        <Link to="/submittedAssignments"><button className="btn accent rounded-full bg-slate-200">Submitted assignments</button></Link>
       
     </div>
     <p>Copyright © 2023 - All right reserved to S M Zahidur Rahman</p>

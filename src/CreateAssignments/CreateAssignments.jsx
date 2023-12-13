@@ -68,18 +68,18 @@ const CreateAssignments = () => {
                 <div className="md:flex md:mb-8 md:gap-5">
                     <div className="form-control md:w-1/2 ">
                         <label className="label">
-                            <span className="label-text">Title</span>
+                            <span className="label-text text-white">Title</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="title" placeholder="Title" className="input input-bordered w-full" />
+                            <input type="text" name="title" placeholder="Title" className="input input-bordered w-full text-black" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ">
                         <label className="label">
-                            <span className="label-text">Marks</span>
+                            <span className="label-text text-white">Marks</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="marks" placeholder="Marks" className="input input-bordered w-full" />
+                            <input type="text" name="marks" placeholder="Marks" className="input input-bordered w-full text-black" />
                         </label>
                     </div>
                 </div>
@@ -87,18 +87,18 @@ const CreateAssignments = () => {
                 <div className="md:flex md:mb-8 md:gap-5">
                     <div className="form-control md:w-1/2 ">
                         <label className="label">
-                            <span className="label-text">Description</span>
+                            <span className="label-text text-white">Description</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="description" placeholder="Description" className="input input-bordered w-full" />
+                            <input type="text" name="description" placeholder="Description" className="input input-bordered w-full text-black" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Difficulty Level</span>
+                            <span className="label-text text-white">Difficulty Level</span>
                         </label>
                         <label className="select">
-                            <select name="difficultyLevel" className="select select-bordered w-full">
+                            <select name="difficultyLevel" className="select select-bordered w-full text-black">
                                 <option value="easy">Easy</option>
                                 <option value="medium">Medium</option>
                                 <option value="hard">Hard</option>
@@ -110,10 +110,10 @@ const CreateAssignments = () => {
                 <div className="mb-10">
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Image URL</span>
+                            <span className="label-text text-white">Image URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="imageURL" placeholder="Image URL" className="input input-bordered w-full" />
+                            <input type="text" name="imageURL" placeholder="Image URL" className="input input-bordered w-full text-black" />
                         </label>
                     </div>
                 </div>
@@ -121,9 +121,9 @@ const CreateAssignments = () => {
                 <div className="mb-10">
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Due Date</span>
+                            <span className="label-text text-white">Due Date</span>
                         </label>
-                        <div className="border pl-3">
+                        <div className="text-black">
                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                         </div>
                     </div>

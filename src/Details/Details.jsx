@@ -43,11 +43,11 @@ const Details = () => {
                 </div>
                 <div className="flex flex-row justify-center gap-5">
                     <div className="flex justify-center mt-5">
-                    <Link to={`/submission/${title}`}><button className="btn accent">Take Assignment</button></Link>
+                    <Link to={`/submission/${title}`}><button className="btn accent bg-slate-200">Take Assignment</button></Link>
                     </div>
                     <Link to={`/`}>
                         <div className="flex justify-center mt-5">
-                            <button className="btn accent">Go Back to <br />HOME</button>
+                            <button className="btn accent bg-slate-200">Go Back to <br />HOME</button>
                         </div>
                     </Link>
                 </div>
